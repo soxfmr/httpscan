@@ -135,7 +135,7 @@ class scan():
         self.msg_queue.put('done.')
 
 if __name__ == "__main__":
-    parser = optparse.OptionParser("Usage: %prog [options] target")
+    parser = optparse.OptionParser("Usage: %prog [options] <target|file>")
     parser.add_option("-t", "--thread", dest = "threads_num",
         default = 10, type = "int",
         help = "[optional]number of theads,default=10")
